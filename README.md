@@ -6,9 +6,9 @@ Hosts send telemetry over **UDP sockets** to a central monitoring server. A **Ry
 ## Team
 | Member | GitHub | Responsibility |
 |---|---|---|
-| Person 1 | aaditiyan33 | (fill in) |
-| Person 2 | (fill in) | (fill in) |
-| Person 3 | (fill in) | (fill in) |
+| Person 1 | Aaditiyan  | (fill in) |
+| Person 2 | Aakash | (fill in) |
+| Person 3 | Abhishek | (fill in) |
 
 ## Architecture
 See [docs/architecture.md](docs/architecture.md).
