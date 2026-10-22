@@ -20,6 +20,7 @@ def run():
     net.waitConnected()
     net.pingAll()
 
+    h1.cmd('rm -f /tmp/sdn_telemetry.json')
     # h1 runs the monitoring server; h2-h4 run telemetry agents
     h1.cmd('python3 %s/server/monitor_server.py > /tmp/server.log 2>&1 &' % ROOT)
     time.sleep(1)

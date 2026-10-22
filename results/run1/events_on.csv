@@ -1,0 +1,7 @@
+1791703458.433,controller_start,mitigation=True
+1791703510.504,congestion_start,s1 port 3 93.8%
+1791703510.516,mitigation_installed,s1 06:92:97:fc:70:24->0e:ed:b9:96:0b:5b 7.9Mbps
+1791703510.518,congestion_start,s2 port 1 93.2%
+1791703510.519,mitigation_installed,s2 06:92:97:fc:70:24->0e:ed:b9:96:0b:5b 7.4Mbps
+1791703512.506,congestion_cleared,s1 port 3 after 2.0s
+1791703512.507,congestion_cleared,s2 port 1 after 2.0s

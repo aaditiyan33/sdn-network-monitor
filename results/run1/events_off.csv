@@ -1,0 +1,10 @@
+1791703163.506,controller_start,mitigation=False
+1791703163.507,host_down,10.0.0.4
+1791703304.463,controller_start,mitigation=False
+1791703304.464,host_down,10.0.0.4
+1791703348.035,controller_start,mitigation=False
+1791703348.036,host_down,10.0.0.4
+1791703390.092,congestion_start,s1 port 3 100.0%
+1791703390.093,congestion_start,s2 port 1 99.9%
+1791703404.107,congestion_cleared,s1 port 3 after 14.0s
+1791703404.108,congestion_cleared,s2 port 1 after 14.0s
