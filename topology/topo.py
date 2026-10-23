@@ -12,7 +12,7 @@ def run():
                   switch=partial(OVSSwitch, protocols='OpenFlow13'))
     net.addController('c0', controller=RemoteController, ip='127.0.0.1', port=6653)
     s1, s2 = net.addSwitch('s1'), net.addSwitch('s2')
-    h1, h2, h3, h4 = [net.addHost('h%d' % i) for i in range(1, 5)]
+    h1, h2, h3, h4 = [net.addHost('h%d' % i, mac='00:00:00:00:00:%02x' % i) for i in range(1, 5)]
     for h, s in ((h1, s1), (h2, s1), (h3, s2), (h4, s2)):
         net.addLink(h, s, bw=100)
     net.addLink(s1, s2, bw=10)          # 10 Mbps inter-switch link (monitored)

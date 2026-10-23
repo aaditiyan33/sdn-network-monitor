@@ -1,18 +1,15 @@
-1792686792.571,controller_start,mitigation=True
-1792686916.74,congestion_start,s1 port 3 80.5%
-1792686916.74,mitigation_installed,s1 ea:e7:79:65:b6:ea->42:4f:4b:67:ed:57 8.2Mbps
-1792686916.741,congestion_start,s2 port 1 80.5%
-1792686916.741,mitigation_installed,s2 ea:e7:79:65:b6:ea->42:4f:4b:67:ed:57 7.8Mbps
-1792686918.742,congestion_cleared,s1 port 3 after 2.0s
-1792686918.742,congestion_cleared,s2 port 1 after 2.0s
-1792687048.926,congestion_start,s1 port 3 100.0%
-1792687048.926,mitigation_installed,s1 ea:e7:79:65:b6:ea->42:4f:4b:67:ed:57 9.5Mbps
-1792687048.926,congestion_start,s2 port 1 100.0%
-1792687048.926,mitigation_installed,s2 ea:e7:79:65:b6:ea->42:4f:4b:67:ed:57 9.0Mbps
-1792687050.929,congestion_cleared,s1 port 3 after 2.0s
-1792687050.93,congestion_cleared,s2 port 1 after 2.0s
-1792772544.193,controller_start,mitigation=True
-1792772650.342,host_down,h4
-1792772650.342,host_down,h3
-1792772780.533,host_recovered,h4
-1792772784.54,host_recovered,h3
+1792774802.964,controller_start,mitigation=True
+1792774899.118,congestion_start,s1 port 3 100.0%
+1792774899.119,mitigation_installed,s1 00:00:00:00:00:02->00:00:00:00:00:03 9.6Mbps confirmed
+1792774901.122,congestion_cleared,s1 port 3 after 2.0s
+1792775015.663,port_up,s1 port 3
+1792775015.663,port_down,s1 port 3
+1792775015.663,port_up,s2 port 3
+1792775015.663,port_down,s2 port 3
+1792775019.287,host_down,h3
+1792775019.287,host_down,h4
+1792775032.75,port_down,s1 port 3
+1792775032.753,port_up,s1 port 3
+1792775032.753,port_up,s2 port 3
+1792775039.312,host_recovered,h4
+1792775041.314,host_recovered,h3

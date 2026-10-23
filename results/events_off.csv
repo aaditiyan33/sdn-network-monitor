@@ -1,9 +1,0 @@
-1792686270.944,controller_start,mitigation=False
-1792686425.172,congestion_start,s1 port 3 100.0%
-1792686425.172,congestion_start,s2 port 1 100.0%
-1792686439.193,congestion_cleared,s1 port 3 after 14.0s
-1792686439.194,congestion_cleared,s2 port 1 after 14.0s
-1792686551.358,congestion_start,s1 port 3 100.0%
-1792686551.359,congestion_start,s2 port 1 100.0%
-1792686565.379,congestion_cleared,s1 port 3 after 14.0s
-1792686565.38,congestion_cleared,s2 port 1 after 14.0s
