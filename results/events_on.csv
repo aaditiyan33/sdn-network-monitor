@@ -11,3 +11,8 @@
 1792687048.926,mitigation_installed,s2 ea:e7:79:65:b6:ea->42:4f:4b:67:ed:57 9.0Mbps
 1792687050.929,congestion_cleared,s1 port 3 after 2.0s
 1792687050.93,congestion_cleared,s2 port 1 after 2.0s
+1792772544.193,controller_start,mitigation=True
+1792772650.342,host_down,h4
+1792772650.342,host_down,h3
+1792772780.533,host_recovered,h4
+1792772784.54,host_recovered,h3
