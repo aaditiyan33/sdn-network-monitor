@@ -3,3 +3,5 @@ __pycache__/
 *.log
 ryu-env/
 .vscode/
+results/events_*.csv
+results/util_*.csv
