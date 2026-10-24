@@ -159,7 +159,7 @@ Each condition below was run once (mitigation off, then on) on the same topology
 - Congestion is about 86% shorter with mitigation. The drop rule is installed in the same poll that detects the congestion.
 - Average ping delay is about 68% (30 Mbps) to 76% (12 Mbps) lower during the attack.
 - No alerts were raised during an idle run with no attack.
-- **Link failure:** hosts behind the failed link were flagged DOWN 5.0 s after the link-down event, and reported RECOVERED 8.7 s after the link returned.
+- **Link failure:** hosts behind the failed link were flagged DOWN 5.7 s after the link-down event, and reported RECOVERED 9.4 s after the link returned.
 
 ![Comparison](results/comparison.png)
 ![Utilization of the monitored link](results/utilization_timeline.png)
