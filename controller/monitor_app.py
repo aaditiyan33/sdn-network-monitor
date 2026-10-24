@@ -44,6 +44,7 @@ class NetworkMonitor(simple_switch_13.SimpleSwitch13):
         self.congested = {}     # (dpid, port) -> start time
         self.blocked = {}       # (dpid, src, dst) -> time installed
         self.alerted = set()
+        self.port_down = {}     # (dpid, port) -> True while the port is down
         if not os.path.isdir(RESULTS_DIR):
             os.makedirs(RESULTS_DIR)
         self._log("controller_start", "mitigation=%s" % MITIGATION)
@@ -80,6 +81,15 @@ class NetworkMonitor(simple_switch_13.SimpleSwitch13):
         down = (bool(msg.desc.state & ofp.OFPPS_LINK_DOWN)
                 or bool(msg.desc.config & ofp.OFPPC_PORT_DOWN)
                 or msg.reason == ofp.OFPPR_DELETE)
+        # Open vSwitch sends several port-status messages for one link change,
+        # so only report when a port's state really changes.
+        key = (dp.id, port)
+        was_down = self.port_down.get(key)
+        self.port_down[key] = down
+        if was_down is None and not down:
+            return                      # first sighting of a port that is up
+        if was_down == down:
+            return                      # repeated message, nothing changed
         if down:
             print("*** ALERT: link down on s%d port %d (port-status event)" % (dp.id, port), flush=True)
             self._log("port_down", "s%d port %d" % (dp.id, port))
