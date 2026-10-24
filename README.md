@@ -114,7 +114,7 @@ sudo python3 topology/topo.py
 ```
 Wait for `0% dropped (12/12 received)` and the `mininet>` prompt. Ryu should print `[FLOW]` lines every 2 s and no alerts.
 
-**Shut down in this order:** Shut down in this order: type `exit` in Mininet, then press Ctrl+C in Ryu.
+**Shut down in this order:** Type `exit` in Mininet, then press Ctrl+C in Ryu.
 The event and utilization CSVs are appended to across runs. Copy them to `results/runs/` after each experiment and delete them before the next one.
 
 ## Tests and experiments
