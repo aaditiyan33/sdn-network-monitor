@@ -204,7 +204,7 @@ sequenceDiagram
 
 Port-status events give an immediate "link down on sX port N" alert and a `port_down` row in the log. The hosts behind the failed link stop sending telemetry, so after about 3 s the server marks them DOWN and the controller raises a host alert. When the link returns, telemetry resumes and the sliding window refills. The host is reported RECOVERED once loss drops back to 20% or below, which takes about 8 clean packets.
 
-Open vSwitch can send several port-status messages for one link transition, so the log may show interleaved `port_up` and `port_down` rows. For measurements, use the first `port_down` after the failure and the last `port_up` before `host_recovered`.
+Open vSwitch can send several port-status messages for one link transition, so the controller remembers each port's last state and logs only real changes. Each failure therefore appears as one `port_down` per port, and each recovery as one `port_up` per port. Detection time is the first `host_down` minus the first `port_down`, and recovery time is `host_recovered` minus the last `port_up`.
 
 ## 8. Failure handling
 
