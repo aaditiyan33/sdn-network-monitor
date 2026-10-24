@@ -1,0 +1,9 @@
+1792827901.059,controller_start,mitigation=True
+1792827917.432,port_down,s1 port 3
+1792827917.433,port_down,s2 port 3
+1792827923.089,host_down,h4
+1792827923.089,host_down,h3
+1792827931.75,port_up,s1 port 3
+1792827931.751,port_up,s2 port 3
+1792827941.114,host_recovered,h4
+1792827941.114,host_recovered,h3

@@ -1,13 +1,9 @@
-1792823364.365,controller_start,mitigation=True
-1792823383.391,port_up,s2 port 3
-1792823383.391,port_down,s2 port 3
-1792823383.391,port_up,s1 port 3
-1792823383.391,port_down,s1 port 3
-1792823383.392,port_down,s2 port 3
-1792823388.394,host_down,h3
-1792823388.395,host_down,h4
-1792823401.764,port_down,s1 port 3
-1792823401.768,port_up,s1 port 3
-1792823401.772,port_up,s2 port 3
-1792823410.421,host_recovered,h3
-1792823410.421,host_recovered,h4
+1792827901.059,controller_start,mitigation=True
+1792827917.432,port_down,s1 port 3
+1792827917.433,port_down,s2 port 3
+1792827923.089,host_down,h4
+1792827923.089,host_down,h3
+1792827931.75,port_up,s1 port 3
+1792827931.751,port_up,s2 port 3
+1792827941.114,host_recovered,h4
+1792827941.114,host_recovered,h3
