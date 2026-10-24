@@ -114,8 +114,7 @@ sudo python3 topology/topo.py
 ```
 Wait for `0% dropped (12/12 received)` and the `mininet>` prompt. Ryu should print `[FLOW]` lines every 2 s and no alerts.
 
-**Shut down in this order:** Ctrl+C in the Ryu terminal, then `exit` in Mininet. This keeps the port-down burst Mininet causes on exit out of your event log.
-
+**Shut down in this order:** Shut down in this order: type `exit` in Mininet, then press Ctrl+C in Ryu.
 The event and utilization CSVs are appended to across runs. Copy them to `results/runs/` after each experiment and delete them before the next one.
 
 ## Tests and experiments
@@ -178,8 +177,7 @@ Each condition below was run once (mitigation off, then on) on the same topology
 - The topology has a single path between the switches, so a link failure is detected and reported but not rerouted.
 - The server and controller exchange data through a file, which works only on one machine.
 - In the recorded runs the telemetry check always agreed with the flow evidence. The paths for stale telemetry and for disagreement were not exercised in Mininet.
-- A link transition can produce several port-status log lines.
-
+- Port-status events are logged once per real state change; Mininet’s startup events are suppressed.
 ## Repository layout
 
 ```
