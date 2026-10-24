@@ -1,0 +1,4 @@
+1792822604.689,controller_start,mitigation=True
+1792822646.746,congestion_start,s1 port 3 100.1%
+1792822646.748,mitigation_installed,s1 00:00:00:00:00:02->00:00:00:00:00:03 10.1Mbps confirmed
+1792822648.748,congestion_cleared,s1 port 3 after 2.0s

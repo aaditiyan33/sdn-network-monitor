@@ -1,0 +1,10 @@
+1792822831.841,controller_start,mitigation=False
+1792822869.89,congestion_start,s1 port 3 94.3%
+1792822883.907,congestion_cleared,s1 port 3 after 14.0s
+1792822906.693,port_up,s1 port 1
+1792822906.693,port_down,s1 port 1
+1792822906.706,port_down,s1 port 2
+1792822906.721,port_down,s2 port 1
+1792822906.729,port_down,s2 port 2
+1792822906.738,port_down,s1 port 3
+1792822906.738,port_down,s2 port 3
