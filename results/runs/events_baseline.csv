@@ -1,9 +1,1 @@
-1792822162.688,controller_start,mitigation=True
-1792822225.504,port_up,s1 port 1
-1792822225.507,port_down,s1 port 1
-1792822225.526,port_down,s1 port 2
-1792822225.536,port_up,s2 port 1
-1792822225.536,port_down,s2 port 1
-1792822225.549,port_down,s2 port 2
-1792822225.563,port_down,s1 port 3
-1792822225.563,port_down,s2 port 3
+1792830161.584,controller_start,mitigation=True
