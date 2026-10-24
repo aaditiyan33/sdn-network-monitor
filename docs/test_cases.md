@@ -14,7 +14,7 @@ All tests run in Mininet with the Ryu controller started first (see the [README]
 | 8 | UDP flood 12 Mbps, mitigation ON | same, `MITIGATION=1` | Source confirmed by telemetry, drop rule on s1, congestion clears at the next poll | PASS: congestion 2.0 s, avg ping 12.3 ms |
 | 9 | UDP flood 30 Mbps, mitigation OFF | as test 7 with `-b 30M` | As test 7 | PASS: congestion 14.0 s, avg ping 45.0 ms |
 | 10 | UDP flood 30 Mbps, mitigation ON | as test 8 with `-b 30M` | As test 8 | PASS: congestion 2.0 s, avg ping 14.5 ms |
-| 11 | Link failure and recovery | `link s1 s2 down`, wait, `link s1 s2 up`, wait about 20 s | Port-status alert, h3 and h4 DOWN, h2 unaffected, then RECOVERED for h3 and h4 | PASS: DOWN after 5.0 s, RECOVERED 8.7 s after link up |
+| 11 | Link failure and recovery | `link s1 s2 down`, wait, `link s1 s2 up`, wait about 20 s | Port-status alert, h3 and h4 DOWN, h2 unaffected, then RECOVERED for h3 and h4 | PASS: DOWN after 5.7 s, RECOVERED 9.4 s after link up |
 
 Notes:
 
