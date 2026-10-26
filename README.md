@@ -4,13 +4,7 @@ Computer Networks Mini Project (SDN + Socket Programming, Topic 6: Network Monit
 
 Hosts send telemetry over **UDP sockets** to a central monitoring server. A **Ryu SDN controller** polls the switches for flow and port statistics, combines them with the application telemetry, raises alerts for abnormal conditions, and automatically blocks a flooding flow. Everything runs in **Mininet** on one Ubuntu VM.
 
-## Team
 
-| Member | GitHub | Responsibility |
-|---|---|---|
-| Person 1 | Aaditiyan | (fill in) |
-| Person 2 | Aakash | (fill in) |
-| Person 3 | Abhishek | (fill in) |
 
 ## What it does
 
