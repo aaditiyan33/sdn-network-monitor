@@ -1,6 +1,6 @@
 # SDN Network Monitoring and Alert System
 
-Computer Networks mini project (SDN + Socket Programming, topic 6: Network Monitoring and Alert System, **UDP**).
+Computer Networks mini project (SDN + Socket Programming, Topic 6: Network Monitoring and Alert System, **UDP**).
 
 Hosts send telemetry over **UDP sockets** to a central monitoring server. A **Ryu SDN controller** polls the switches for flow and port statistics, combines them with the application telemetry, raises alerts for abnormal conditions, and automatically blocks a flooding flow. Everything runs in **Mininet** on one Ubuntu VM.
 
